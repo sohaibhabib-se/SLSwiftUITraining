@@ -23,7 +23,7 @@ struct SignUpView: View {
         VStack(spacing: 0){
             HStack{
                 Button(action: {
-                    router.navigate(to: .loginScreen)
+                    
                 }, label: {
                     Image(systemName: "xmark")
                         .resizable()
@@ -38,14 +38,15 @@ struct SignUpView: View {
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                     .frame(width: 113, height: 36, alignment: .center)
                 Spacer(minLength: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/)
-                NavigationLink {
-//                    LoginView()
-                } label: {
+                Button(action: {
+                    router.navigate(to: .loginScreen)
+                }, label: {
                     Text("Login")
                         .foregroundColor(Color(UIColor(displayP3Red: 93/255, green: 176/255, blue: 117/255, alpha: 1)))
                         .fontWeight(.regular)
                         .padding([.trailing], 16)
-                }
+                    
+                })
             }
             .padding([.leading, .trailing], 15)
             Spacer()

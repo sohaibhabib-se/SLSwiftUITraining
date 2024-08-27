@@ -22,6 +22,8 @@ struct SLSwiftUITrainingApp: App {
                             LoginView()
                         case .profileScreen:
                             ProfileView()
+                        case .congratulationScreen:
+                            CongratulationsView()
                         }
                     }
             }

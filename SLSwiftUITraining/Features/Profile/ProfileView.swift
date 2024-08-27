@@ -10,7 +10,10 @@ import SwiftUI
 struct ProfileView: View {
     
     @State private var selectedTab = 0
-    @State var isActive: Bool = false
+    @State var isDrawerViewActive: Bool = false
+    @State var isCongratulationsViewActive: Bool = false
+    @State var isRateViewActive: Bool = false
+    @EnvironmentObject var router: AppRouter
     
     var body: some View {
         ZStack{
@@ -84,7 +87,7 @@ struct ProfileView: View {
                 Spacer()
                     .frame(height: 170)
                 Button{
-                    isActive = true
+                    isDrawerViewActive = true
                 } label: {
                     Image("profile_pic")
                         .resizable()
@@ -111,14 +114,30 @@ struct ProfileView: View {
 //                }
 //            }
             
-            
+            .navigationBarBackButtonHidden(true)
         }
-        .sheet(isPresented: $isActive, content: {
-            DrawerHeaderView(isActive: $isActive, title: "Drawer Header", message: "Consequat velit qui adipisicing sunt do reprehenderit ad laborum tempor ullamco exercitation.", buttonTitle: "Click Me") {
-                isActive = false
+        .sheet(isPresented: $isDrawerViewActive, content: {
+            DrawerHeaderView(title: "Drawer Header", message: "Consequat velit qui adipisicing sunt do reprehenderit ad laborum tempor ullamco exercitation.", buttonTitle: "Click Me") {
+                isDrawerViewActive = false
+                router.navigate(to: .congratulationScreen)
+            }
+            .overlay{
+                CustomMessageShape()
+                    .stroke(.clear, lineWidth: 30)
             }
             .presentationDetents([.height(250)])
         })
+    }
+    
+    struct CustomMessageShape: Shape {
+        func path(in rect: CGRect) -> Path {
+            let path = UIBezierPath(
+                roundedRect: rect,
+                byRoundingCorners: [.topLeft, .topRight],
+                cornerRadii: CGSize(width: 50, height: 50)
+            )
+            return Path(path.cgPath)
+        }
     }
 }
 

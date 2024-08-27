@@ -13,6 +13,7 @@ class AppRouter: ObservableObject {
     public enum Destination: Hashable {
         case loginScreen
         case profileScreen
+        case congratulationScreen
     }
     
     @Published var navPath = NavigationPath()

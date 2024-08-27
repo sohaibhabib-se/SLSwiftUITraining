@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DrawerHeaderView: View {
     
-    @Binding var isActive: Bool
+//    @Binding var isActive: Bool
     let title: String
     let message: String
     let buttonTitle: String
@@ -32,22 +32,22 @@ struct DrawerHeaderView: View {
                 print("Secondary action btn pressed")
             }
         }
-        .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
-        .padding()
-        .background(.white)
-        .clipShape(RoundedRectangle(cornerRadius: 20))
-        .shadow(radius: 20)
-        .padding(30)
-        .offset(x: 0, y: offset)
-        .onAppear{
-            withAnimation(.spring()) {
-                offset = 0
-            }
-        }
+//        .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+//        .padding()
+//        .background(.white)
+//        .clipShape(RoundedRectangle(cornerRadius: 20))
+//        .shadow(radius: 20)
+//        .padding(30)
+//        .offset(x: 0, y: offset)
+//        .onAppear{
+//            withAnimation(.spring()) {
+//                offset = 0
+//            }
+//        }
     }
 }
 
 #Preview {
-    DrawerHeaderView(isActive: .constant(true), title: "Access photos?", message: "This lets you choose which photos you want to add to this project.", buttonTitle: "Give Access", action: {})
+    DrawerHeaderView(title: "Access photos?", message: "This lets you choose which photos you want to add to this project.", buttonTitle: "Give Access", action: {})
 //    DrawerHeaderView(isActive: .constant(true), title: "Access photos?", message: "This lets you choose which photos you want to add to this project.", buttonTitle: "Give Access", action: {})
 }

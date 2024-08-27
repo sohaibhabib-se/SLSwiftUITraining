@@ -18,6 +18,8 @@
 		DA4B97D72C74ECA500E2C3D8 /* SLButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B97D62C74ECA500E2C3D8 /* SLButtonView.swift */; };
 		DA4B97D92C74F16D00E2C3D8 /* CustomCheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B97D82C74F16D00E2C3D8 /* CustomCheckboxView.swift */; };
 		DA4B97DC2C74F46600E2C3D8 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B97DB2C74F46600E2C3D8 /* AppRouter.swift */; };
+		DA842A382C7DAF430050CF0F /* CongratulationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA842A372C7DAF430050CF0F /* CongratulationsView.swift */; };
+		DA9ED0F82C7DD7B100B1009A /* SLPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9ED0F72C7DD7B100B1009A /* SLPopUpView.swift */; };
 		DAB8FCC52C78CB4400B8EB65 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB8FCC42C78CB4400B8EB65 /* LoginView.swift */; };
 		DAB8FCC72C78D8D300B8EB65 /* SLTextBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB8FCC62C78D8D300B8EB65 /* SLTextBtnView.swift */; };
 		DAB8FCCA2C78E0F600B8EB65 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB8FCC92C78E0F600B8EB65 /* ProfileView.swift */; };
@@ -59,6 +61,8 @@
 		DA4B97D62C74ECA500E2C3D8 /* SLButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLButtonView.swift; sourceTree = "<group>"; };
 		DA4B97D82C74F16D00E2C3D8 /* CustomCheckboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCheckboxView.swift; sourceTree = "<group>"; };
 		DA4B97DB2C74F46600E2C3D8 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		DA842A372C7DAF430050CF0F /* CongratulationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsView.swift; sourceTree = "<group>"; };
+		DA9ED0F72C7DD7B100B1009A /* SLPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLPopUpView.swift; sourceTree = "<group>"; };
 		DAB8FCC42C78CB4400B8EB65 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		DAB8FCC62C78D8D300B8EB65 /* SLTextBtnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLTextBtnView.swift; sourceTree = "<group>"; };
 		DAB8FCC92C78E0F600B8EB65 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 		DA4B97D02C74EB0500E2C3D8 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				DA842A362C7DAED80050CF0F /* CongratulationsScreen */,
 				DAB8FCD12C7B1B6300B8EB65 /* BottomDrawer */,
 				DAB8FCC82C78E0C700B8EB65 /* Profile */,
 				DA4B97D32C74EB9100E2C3D8 /* Common */,
@@ -185,6 +190,7 @@
 				DA4B97D62C74ECA500E2C3D8 /* SLButtonView.swift */,
 				DA4B97D82C74F16D00E2C3D8 /* CustomCheckboxView.swift */,
 				DAB8FCC62C78D8D300B8EB65 /* SLTextBtnView.swift */,
+				DA9ED0F72C7DD7B100B1009A /* SLPopUpView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -195,6 +201,14 @@
 				DA4B97DB2C74F46600E2C3D8 /* AppRouter.swift */,
 			);
 			path = Routing;
+			sourceTree = "<group>";
+		};
+		DA842A362C7DAED80050CF0F /* CongratulationsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DA842A372C7DAF430050CF0F /* CongratulationsView.swift */,
+			);
+			path = CongratulationsScreen;
 			sourceTree = "<group>";
 		};
 		DAB8FCC82C78E0C700B8EB65 /* Profile */ = {
@@ -355,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAB8FCCC2C7A2E7200B8EB65 /* PostCellView.swift in Sources */,
+				DA9ED0F82C7DD7B100B1009A /* SLPopUpView.swift in Sources */,
 				DA4B97D92C74F16D00E2C3D8 /* CustomCheckboxView.swift in Sources */,
 				DAB8FCCA2C78E0F600B8EB65 /* ProfileView.swift in Sources */,
 				DAB8FCD42C7B1BA200B8EB65 /* DrawerHeaderView.swift in Sources */,
@@ -366,6 +381,7 @@
 				DA4B97D52C74EBB000E2C3D8 /* SLTextFieldView.swift in Sources */,
 				DA4B97A52C74EACC00E2C3D8 /* SLSwiftUITrainingApp.swift in Sources */,
 				DA4B97D72C74ECA500E2C3D8 /* SLButtonView.swift in Sources */,
+				DA842A382C7DAF430050CF0F /* CongratulationsView.swift in Sources */,
 				DAB8FCCE2C7A406300B8EB65 /* PostView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
